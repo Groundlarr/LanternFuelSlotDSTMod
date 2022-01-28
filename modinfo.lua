@@ -41,6 +41,120 @@ server_filter_tags = {
 	"infinite",
 }
 
-configuration_options =
+local null_options = {
+	{ description = "", data = 0 }
+}
+
+configuration_options = 
 {
+    {
+		name = "UI",
+		options = null_options,
+		hover = "",
+		default = 0,
+	},	
+
+	{
+		name = "slotsize",
+		label = "Slot Size",
+		hover = "Changes the size of the extra slots added by this mod. Also effects vanilla items that use the hand slot container.",
+		options =
+		{
+			{description = "Tiny", data = 1},
+			{description = "Small", data = 1.25},
+			{description = "Normal (Default)", data = 1.5},
+		},
+		default = 1.5,
+	},
+
+    {
+		name = "Item Slot Toggles",
+		options = null_options,
+		hover = "",
+		default = 0,
+	},	
+
+	{
+		name = "lantern",
+		label = "Lantern",
+		hover = "Enable or disable the Lantern slot added by this mod.",
+		options =
+		{
+			{description = "No", data = false},
+			{description = "Yes (Default)", data = true},
+		},
+		default = true,
+	},
+
+    {
+		name = "minerhat",
+		label = "Miner Hat",
+		hover = "Enable or disable the Miner Hat slot added by this mod.",
+		options =
+		{
+			{description = "No", data = false},
+			{description = "Yes (Default)", data = true},
+		},
+		default = true,
+	},
+
+    {
+		name = "armorskeleton",
+		label = "Bone Armor",
+		hover = "Enable or disable the Bone Armor slot added by this mod.",
+		options =
+		{
+			{description = "No", data = false},
+			{description = "Yes (Default)", data = true},
+		},
+		default = true,
+	},
+
+    {
+		name = "molehat",
+		label = "Moggles",
+		hover = "Enable or disable the Moggles slot added by this mod.",
+		options =
+		{
+			{description = "No", data = false},
+			{description = "Yes (Default)", data = true},
+		},
+		default = true,
+	},
+
+    {
+		name = "shieldofterror",
+		label = "Shield Of Terror",
+		hover = "Enable or disable the Shield of Terror slot added by this mod.",
+		options =
+		{
+			{description = "No", data = false},
+			{description = "Yes (Default)", data = true},
+		},
+		default = true,
+	},
+
+    {
+		name = "yellowamulet",
+		label = "Magiluminescence",
+		hover = "Enable or disable the Magiluminescence slot added by this mod.",
+		options =
+		{
+			{description = "No", data = false},
+			{description = "Yes (Default)", data = true},
+		},
+		default = true,
+	},
+
+    {
+		name = "thurible",
+		label = "Shadow Thurible",
+		hover = "Enable or disable the Shadow Thurible slot added by this mod.",
+		options =
+		{
+			{description = "No", data = false},
+			{description = "Yes (Default)", data = true},
+		},
+		default = true,
+	},
 }
